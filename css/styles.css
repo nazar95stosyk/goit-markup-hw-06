@@ -707,3 +707,8 @@ img {
 .modal-checkbox-input {
   margin-right: 8px;
 }
+.modal-name-icon {
+  width: 18px;
+  height: 18px;
+  fill: var(--main-text-color);
+}
