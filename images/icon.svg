@@ -1,5 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
   <defs>
+  <symbol id="icon-telegram" viewBox="0 0 32 32">
+<path fill="#fff" style="fill: var(--color1, #fff)" d="M32 2.667l-32 15 10.227 3.156 15.773-12.323-11.998 13.488 0.010 0.003-0.012-0.003v7.345l5.735-5.576 7.265 2.242 5-23.333z"></path>
+</symbol>
   <symbol id="icon-modal-name" viewBox="0 0 28 32">
 <path d="M13.913 12.522c2.306 0 4.174-1.868 4.174-4.174s-1.868-4.174-4.174-4.174c-2.306 0-4.174 1.868-4.174 4.174s1.868 4.174 4.174 4.174zM13.913 14.609c-2.786 0-8.348 1.398-8.348 4.174v1.043c0 0.574 0.47 1.043 1.043 1.043h14.609c0.574 0 1.043-0.47 1.043-1.043v-1.043c0-2.776-5.562-4.174-8.348-4.174z"></path>
 </symbol>

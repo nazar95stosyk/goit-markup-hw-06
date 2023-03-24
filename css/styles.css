@@ -188,7 +188,6 @@ img {
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: var(--main-background-color);
-  text-align: center;
   background-color: var(--iris-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -554,6 +553,7 @@ img {
   margin-right: 120px;
 }
 .footer-socials {
+  margin-right: 80px;
 }
 .footer-socials-title {
   font-weight: 500;
@@ -671,6 +671,14 @@ img {
   border: 1px solid #8e8f99;
   border-radius: 4px;
   margin-bottom: 8px;
+  padding-left: 38px;
+}
+.modal-form-input:is(:hover, :focus) {
+  color: var(--hover-focus-color);
+}
+
+.modal-form-input:is(:hover, :focus) .modal-name-icon {
+  fill: var(--hover-focus-color);
 }
 .is-hidden {
   visibility: hidden;
@@ -706,9 +714,93 @@ img {
 }
 .modal-checkbox-input {
   margin-right: 8px;
+  cursor: pointer;
+}
+.modal-button {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--main-background-color);
+  background-color: var(--iris-color);
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 16px 64px;
+  border: var(--iris-color);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background;
+  margin-top: 24px;
+}
+.modal-button:is(:hover, :focus) {
+  background-color: var(--hover-focus-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.modal-input-icon {
+  position: relative;
 }
 .modal-name-icon {
   width: 18px;
-  height: 18px;
+  height: 24px;
   fill: var(--main-text-color);
+  position: absolute;
+  left: 16px;
+  top: 43%;
+  transform: translateY(-50%);
+}
+.footer-subscribe-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--main-background-color);
+  margin-bottom: 16px;
+}
+.footer-subscribe-input {
+  border: 1px solid #ffffff;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background: var(--main-text-color);
+  width: 264px;
+  height: 40px;
+  padding-left: 16px;
+  color: var(--main-background-color);
+  font-size: 12px;
+  line-height: 1.166;
+  letter-spacing: 0.04em;
+  margin-right: 24px;
+}
+.footer-input-button {
+  display: flex;
+}
+.footer-subscribe-btn {
+  background: var(--iris-color);
+  color: var(--main-background-color);
+  border-radius: 4px;
+  font-size: 12px;
+  line-height: 1.166;
+  letter-spacing: 0.04em;
+  border: none;
+  padding: 8px 20px 8px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  max-width: 165px;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: background;
+}
+.footer-subscribe-btn:is(:hover, :focus) {
+  background-color: var(--hover-focus-color);
+  border: var(--hover-focus-color);
+}
+.footer-subscribe-input::placeholder {
+  color: var(--main-background-color);
+}
+.footer-subscribe-icon {
+  width: 24px;
+  height: 20px;
+  fill: var(--main-background-color);
+  margin-left: 16px;
 }
