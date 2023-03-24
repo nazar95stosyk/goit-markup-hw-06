@@ -609,7 +609,6 @@ img {
 }
 .modal {
   padding: 72px 24px 24px;
-
   width: 408px;
   min-height: 584px;
   background-color: #fcfcfc;
@@ -672,9 +671,11 @@ img {
   border: 1px solid #8e8f99;
   border-radius: 4px;
   padding-left: 38px;
+  outline: none;
 }
 .modal-form-input:is(:hover, :focus) {
   color: var(--hover-focus-color);
+  border: 1px solid var(--hover-focus-color);
 }
 
 .modal-form-input:is(:hover, :focus) .modal-name-icon {
@@ -703,6 +704,11 @@ img {
   letter-spacing: 0.04em;
   color: #8e8f99;
   padding: 8px 16px;
+  outline: none;
+  resize: none;
+}
+.modal-comment:focus {
+  border: 1px solid var(--hover-focus-color);
 }
 .modal-checkbox-link {
   font-size: 12px;
@@ -719,6 +725,7 @@ img {
   cursor: pointer;
 }
 .modal-button {
+  display: block;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -733,10 +740,10 @@ img {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: background;
-  margin-top: 24px;
+  margin: 24px auto 0;
 }
 .modal-button:is(:hover, :focus) {
-  background-color: var(--hover-focus-color);
+  background: var(--hover-focus-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .modal-input-icon {
