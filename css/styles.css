@@ -553,7 +553,7 @@ img {
   margin-right: 120px;
 }
 .footer-socials {
-  margin-right: 80px;
+  margin-right: auto;
 }
 .footer-socials-title {
   font-weight: 500;
@@ -608,6 +608,8 @@ img {
   transition: opacity 250ms linear, visibility 250ms linear;
 }
 .modal {
+  padding: 72px 24px 24px;
+
   width: 408px;
   min-height: 584px;
   background-color: #fcfcfc;
@@ -629,14 +631,16 @@ img {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: background;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
 }
 .modal-close-btn-icon {
   width: 8px;
   height: 8px;
   fill: rgba(46, 47, 66, 1);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: fill, transparent;
@@ -650,7 +654,6 @@ img {
   border-color: transparent;
 }
 .modal-title {
-  padding-top: 72px;
   text-align: center;
   font-weight: 500;
   font-size: 16px;
@@ -662,15 +665,12 @@ img {
 }
 .modal-form {
   width: 100%;
-  padding-left: 24px;
-  padding-right: 24px;
 }
 .modal-form-input {
   width: 100%;
   height: 40px;
   border: 1px solid #8e8f99;
   border-radius: 4px;
-  margin-bottom: 8px;
   padding-left: 38px;
 }
 .modal-form-input:is(:hover, :focus) {
@@ -686,6 +686,8 @@ img {
   pointer-events: none;
 }
 .modal-form-label {
+  display: block;
+  margin-bottom: 4px;
   font-size: 12px;
   line-height: 1.166;
   letter-spacing: 0.04em;
@@ -739,6 +741,7 @@ img {
 }
 .modal-input-icon {
   position: relative;
+  margin-bottom: 8px;
 }
 .modal-name-icon {
   width: 18px;
@@ -746,7 +749,7 @@ img {
   fill: var(--main-text-color);
   position: absolute;
   left: 16px;
-  top: 43%;
+  top: 50%;
   transform: translateY(-50%);
 }
 .footer-subscribe-title {
@@ -772,16 +775,18 @@ img {
 }
 .footer-input-button {
   display: flex;
+  align-items: center;
 }
 .footer-subscribe-btn {
   background: var(--iris-color);
   color: var(--main-background-color);
   border-radius: 4px;
-  font-size: 12px;
-  line-height: 1.166;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
   letter-spacing: 0.04em;
   border: none;
-  padding: 8px 20px 8px 24px;
+  padding: 8px 24px;
   display: flex;
   justify-content: space-between;
   align-items: center;
