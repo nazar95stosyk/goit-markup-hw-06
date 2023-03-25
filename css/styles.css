@@ -737,11 +737,13 @@ img {
   border-radius: 2px;
   width: 16px;
   height: 16px;
+  cursor: pointer;
 }
 .modal-checkbox-input:checked + .modal-checkbox-input-icon {
   background: url(../images/modal-checkbox-submit.svg);
   outline: none;
   border: var(--hover-focus-color);
+  cursor: pointer;
 }
 .modal-checkbox-text {
   margin-left: 8px;
