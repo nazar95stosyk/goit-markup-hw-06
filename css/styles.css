@@ -697,7 +697,6 @@ img {
   display: block;
   height: 120px;
   width: 100%;
-  margin-bottom: 16px;
   font-size: 12px;
   line-height: 1.166;
   letter-spacing: 0.04em;
@@ -716,6 +715,7 @@ img {
   color: var(--iris-color);
 }
 .modal-checkbox {
+  margin-top: 16px;
   display: flex;
   align-items: center;
 }
@@ -747,9 +747,6 @@ img {
   margin-left: 8px;
   margin-right: 4px;
 }
-/* .modal-checkbox-text:last-child() {
-  margin-left: 100px;
-} */
 .modal-button {
   display: block;
   font-family: inherit;
